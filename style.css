@@ -1,310 +1,321 @@
-
 /* Font for Page Title */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* Reset default style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 /* MAIN HOME */
 
 :root {
-    --backgroundColor: #17181a;
-    --backgroundColorFaded: #17181a52;
-    --foregroundColor: #ffffff;
-    --foregroundColorFaded: #ffffff49;
-    --primaryAccentColor: #A7FC57;
-    --secondaryAccentColor: #41483c;
-    --secondaryAccentColorFaded: #41483c8f;
+  --backgroundColor: #17181a;
+  --backgroundColorFaded: #17181a52;
+  --foregroundColor: #ffffff;
+  --foregroundColorFaded: #ffffff49;
+  --primaryAccentColor: #a7fc57;
+  --secondaryAccentColor: #41483c;
+  --secondaryAccentColorFaded: #41483c8f;
 }
 
 .bg-blured {
-    backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .stroked {
-    border: 0.1px solid var(--foregroundColorFaded);
+  border: 0.1px solid var(--foregroundColorFaded);
 }
 
 .primary-colored {
-    color: var(--primaryAccentColor);
+  color: var(--primaryAccentColor);
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    margin-top: 15px;
-    z-index: 10;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  margin-top: 15px;
+  z-index: 10;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    border: 1px solid;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: fit-content;
-    padding-left: 20px;
-    padding-right: 5px;
-    border-radius: 30px;
-    justify-content: space-between;
-    background-color: var(--backgroundColorFaded);
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+  padding-left: 20px;
+  padding-right: 5px;
+  border-radius: 30px;
+  justify-content: space-between;
+  background-color: var(--backgroundColorFaded);
 }
 
 #logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
 }
 
 #main-title {
-    font-family: "Playfair Display", serif;
-    font-size: x-large;
-    margin: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: x-large;
+  margin: 10px;
 }
 
 .nav-image {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 #nav-options a {
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 30px;
-    color: var(--foregroundColor);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: var(--foregroundColor);
 }
 
 #nav-options a:hover:not(.selected-tab) {
-    background-color: rgba(247, 247, 247, 0.216);
+  background-color: rgba(247, 247, 247, 0.216);
 }
 
 #nav-options a:active {
-    background-color: var(--primaryAccentColor);
-    color: var(--backgroundColor);
+  background-color: var(--primaryAccentColor);
+  color: var(--backgroundColor);
 }
 
 #nav-options .selected-tab {
-    background-color: var(--primaryAccentColor);
-    color: var(--backgroundColor);
+  background-color: var(--primaryAccentColor);
+  color: var(--backgroundColor);
 }
 
 #menu-button {
-    display: none;
-    cursor: pointer;
-    border: none;
-    background-color: #00000000;
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: #00000000;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--backgroundColor);
-    color: var(--foregroundColor);
-    transition-duration: 0.2s;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--backgroundColor);
+  color: var(--foregroundColor);
+  transition-duration: 0.2s;
 }
 
 #home-main {
-    
 }
 
 .margined-top {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 mark {
-    background-color: var(--primaryAccentColor);
+  background-color: var(--primaryAccentColor);
 }
 
 #thinned {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 #home-hero-container {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 #home-hero-image {
-    object-fit: cover;
-    width: 100%;
-    height: 700px;
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
 }
 
 #home-hero-title {
-    position: absolute;
-    text-align: left;
-    bottom: 300px;
-    left: 15%;
-    font-size: 40px;
+  position: absolute;
+  text-align: left;
+  bottom: 300px;
+  left: 15%;
+  font-size: 40px;
 }
 
 #home-hero-image-cite {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .cite-anchor {
-    color: var(--foregroundColor);
-    text-decoration: none;
-    background-color: #17181a;
-    padding: 1px 8px;
-    border-radius: 10px;
+  color: var(--foregroundColor);
+  text-decoration: none;
+  background-color: #17181a;
+  padding: 1px 8px;
+  border-radius: 10px;
 }
 
 #home-location-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .home-location-item {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-    align-items: center;
-    border-top: 0.5px solid var(--foregroundColorFaded);
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  align-items: center;
+  border-top: 0.5px solid var(--foregroundColorFaded);
 }
 
 .home-location-image-container {
-    position: relative;
+  position: relative;
 }
 
 .home-location-image-cite {
-    position: absolute;
-    bottom: 10px;
-    left: 12%;
+  position: absolute;
+  bottom: 10px;
+  left: 12%;
 }
 
 .home-location-thumbnail {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 30px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 .home-location-description {
-    margin: 0px 30px;
+  margin: 0px 30px;
 }
 
 .home-location-redirect-link {
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 30px;
-    border: 1px solid var(--foregroundColor);
-    color: var(--foregroundColor);
-    display:inline-block;
-    transition-duration: 0.2s;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid var(--foregroundColor);
+  color: var(--foregroundColor);
+  display: inline-block;
+  transition-duration: 0.2s;
 }
 
 .home-location-redirect-link:hover {
-    background-color: var(--primaryAccentColor);
-    color: var(--backgroundColor);
-    border: 1px solid var(--primaryAccentColor);
-    scale: 1.1;
+  background-color: var(--primaryAccentColor);
+  color: var(--backgroundColor);
+  border: 1px solid var(--primaryAccentColor);
+  scale: 1.1;
 }
 
 #home-location-last-item {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 #home-footer-container {
-    position: relative;
+  position: relative;
 }
 
 #home-footer-text {
-    position: absolute;
-    width: 60%;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -60%);
-    font-size: x-large;
+  position: absolute;
+  width: 60%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  font-size: x-large;
 }
 
 #home-generic-image {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
 }
 
 #home-footer-image-cite {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.footer-developer-details h3 {
+  margin: 1rem 0rem;
+}
+
+.footer-developer-details p {
+  line-height: 1.6;
 }
 
 #home-footer-rights-text {
-    position: absolute;
-    top: 530px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0.7;
-    margin-bottom: 30px;
-    margin-top: 30px;
+  position: absolute;
+  top: 530px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
+/* Added by Kishan */
 #footer-rights-text {
-    text-align: center;
-    opacity: 0.7;
+  text-align: center;
+  opacity: 0.7;
+  padding-bottom: 1.5rem;
 }
 
 #footer-about-container {
-    display: flex;
-    margin: 10px 15px;
-    border-top: 0.5px solid var(--secondaryAccentColor);
-    margin-bottom: 50px;
+  display: flex;
+  margin: 10px 15px 0px;
+  border-top: 0.5px solid var(--secondaryAccentColor);
+  margin-bottom: 50px;
+  padding-top: 2rem;   /* Added by Kishan */
 }
 
 #about-icon {
-    margin-top: 18px;
-    margin-right: 20px;
+  margin-top: 18px;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 950px) {
-    #menu-button {
-        display: inline;
-    }
+  #menu-button {
+    display: inline;
+  }
 
-    #nav-options {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        margin-left: -120px;
-        background-color: var(--secondaryAccentColor);
-        padding: 10px;
-        border-radius: 20px;
-        border: 0.5px solid var(--secondaryAccentColorFaded);
-    }
+  #nav-options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: -120px;
+    background-color: var(--secondaryAccentColor);
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.5px solid var(--secondaryAccentColorFaded);
+  }
 
-    #menu-button:hover {
-        background-color: var(--secondaryAccentColor);
-        border-radius: 20px;
-    }
+  #menu-button:hover {
+    background-color: var(--secondaryAccentColor);
+    border-radius: 20px;
+  }
 
-    #menu-button:hover + #nav-options {
-        display: flex;
-    }
+  #menu-button:hover + #nav-options {
+    display: flex;
+  }
 
-    #nav-options:hover {
-        display: flex;
-    }
+  #nav-options:hover {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1500px) {
-    #home-location-container {
-        display: inline;
-    }
+  #home-location-container {
+    display: inline;
+  }
 }
 
 /* =========================== */
 
 /* MESAPOTAMIA BIBIN - START */
 /* WRITE YOUR CSS HERE */
-
-
-
-
-
 
 /* MESAPOTAMIA BIBIN - END */
 
@@ -313,20 +324,12 @@ mark {
 /* EGYPT RAHUL - START */
 /* WRITE YOUR CSS HERE */
 
-
-
-
-
 /* EGYPT RAHUL - END */
 
 /* =========================== */
 
 /* GREECE SHANTHAKUMAR - START */
 /* WRITE YOUR CSS HERE */
-
-
-
-
 
 /* GREECE SHANTHAKUMAR - END */
 
@@ -335,11 +338,6 @@ mark {
 /* CHINA GIHAN - START */
 /* WRITE YOUR CSS HERE */
 
-
-
-
-
-
 /* CHINA GIHAN - END */
 
 /* =========================== */
@@ -347,8 +345,343 @@ mark {
 /* INDUS KISHAN - START */
 /* WRITE YOUR CSS HERE */
 
+/* Main div Styles */
+.main-div {
+  padding: 5rem;
+}
 
+.section {
+  margin-bottom: 5rem;
+}
 
+/* Banner Image Container */
+.banner-image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
 
+.banner-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.banner-image-container figcaption {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+/* Section Titles */
+.section-title {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Section Text */
+.section-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Image Container */
+.image-container {
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0;
+  border: 3px solid #fff;
+  padding: 15px;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Responsive Image */
+.responsive-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Culture & Society Image Grid */
+#culture-society figure {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 10px;
+}
+
+#culture-society figure :nth-child(2) {
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Quotes Section */
+#quotes {
+  padding-top: 1rem;
+}
+
+.quote {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #fff;
+  text-align: center;
+  margin: 3rem 0;
+  padding: 1.5rem 2rem;
+  border-left: 5px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.quote:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 25px rgba(132, 129, 129, 0.1);
+}
+
+.quote cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #aaa;
+  text-align: right;
+}
+
+/* History Section */
+#history {
+  padding-top: 1rem;
+}
+
+/* Timeline Section */
+#timeline {
+  margin-top: 2rem;
+  padding: 1.5rem 1.5rem 0.5rem;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+#timeline:hover {
+  transform: translateY(-10px);
+}
+
+/* Add border with animation on hover */
+#timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+#timeline:hover::after {
+  opacity: 1;
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Timeline List */
+.timeline-list {
+  list-style-type: square;
+  margin: 30px 0;
+  padding-left: 40px;
+  font-size: 1.5rem;
+}
+
+.timeline-item {
+  margin-bottom: 15px;
+}
+
+/* Major Cities Section */
+#cities {
+  padding-top: 1rem;
+}
+
+/* Table Styles */
+.info-table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.info-table:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Table Header Styles */
+.table-header {
+  border: 2px solid #fff;
+  padding: 1.5rem;
+  background-color: #555;
+  text-align: left;
+  color: #fff;
+}
+
+/* Table Data Styles */
+.table-data {
+  border: 2px solid #fff;
+  padding: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+/* Artifacts Section */
+#culture {
+  padding-top: 1rem;
+}
+
+/* Economy & Trade Section */
+#economy {
+  padding-top: 1rem;
+}
+
+/* Figcaption Styles */
+figcaption {
+  position: absolute;
+  bottom: 19px;
+  right: 15px;
+  font-size: 1.2em;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 2;
+  width: auto;
+  max-width: 90%;
+}
+
+/* Responsive Style */
+@media (max-width: 992px) {
+  .banner-image-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .banner-img {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-div {
+    padding: 4rem;
+  }
+
+  .banner-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-image-container figcaption {
+    font-size: 1rem;
+}
+
+  .banner-img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .title-overlay {
+    font-size: 3rem;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+    padding: 3px 5px;
+    bottom: 19px;
+    right: 15px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .timeline-list {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .info-table {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #culture-society figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .quote cite {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-div {
+    padding: 2rem;
+  }
+
+  #culture-society figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+}
 
 /* INDUS KISHAN - END */
